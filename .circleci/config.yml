@@ -1,9 +1,7 @@
 aliases:
   - &bundle_install
     name: Execute `bundle install`
-    command: |
-      echo "ruby-2.4" > ~/.ruby-version && \
-      bundle install --path vendor/bundle
+    command: bundle install --path vendor/bundle
   - &restore_gem
     keys:
       - gem-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
