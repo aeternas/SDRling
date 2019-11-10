@@ -1,4 +1,7 @@
 aliases:
+  - &bundle_install
+    name: Execute `bundle install`
+    command: bundle install
   - &install_cocoapods
     name: Install CocoaPods
     command: pod install
@@ -9,6 +12,7 @@ jobs:
       xcode: "10.3.0"
     steps:
       - checkout
+      - run: *bundle_install
       - run:
           name: Build and run tests
           command: bundle exec fastlane scan
