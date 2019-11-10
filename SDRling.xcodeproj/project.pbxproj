@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CC3F485237807EB00FA157C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F484237807EB00FA157C /* AppDelegate.swift */; };
+		2CC3F487237807EB00FA157C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F486237807EB00FA157C /* ViewController.swift */; };
+		2CC3F48A237807EB00FA157C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F488237807EB00FA157C /* Main.storyboard */; };
+		2CC3F48C237807EC00FA157C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48B237807EC00FA157C /* Assets.xcassets */; };
+		2CC3F48F237807EC00FA157C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */; };
+		2CC3F49A237807EC00FA157C /* SDRlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F499237807EC00FA157C /* SDRlingTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CC3F496237807EC00FA157C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC3F479237807EB00FA157C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CC3F480237807EB00FA157C;
+			remoteInfo = SDRling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CC3F481237807EB00FA157C /* SDRling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDRling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC3F484237807EB00FA157C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CC3F486237807EB00FA157C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CC3F489237807EB00FA157C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CC3F48B237807EC00FA157C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CC3F48E237807EC00FA157C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CC3F490237807EC00FA157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC3F495237807EC00FA157C /* SDRlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDRlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC3F499237807EC00FA157C /* SDRlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDRlingTests.swift; sourceTree = "<group>"; };
+		2CC3F49B237807EC00FA157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CC3F47E237807EB00FA157C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC3F492237807EC00FA157C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CC3F478237807EB00FA157C = {
+			isa = PBXGroup;
+			children = (
+				2CC3F483237807EB00FA157C /* SDRling */,
+				2CC3F498237807EC00FA157C /* SDRlingTests */,
+				2CC3F482237807EB00FA157C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2CC3F482237807EB00FA157C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CC3F481237807EB00FA157C /* SDRling.app */,
+				2CC3F495237807EC00FA157C /* SDRlingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CC3F483237807EB00FA157C /* SDRling */ = {
+			isa = PBXGroup;
+			children = (
+				2CC3F484237807EB00FA157C /* AppDelegate.swift */,
+				2CC3F486237807EB00FA157C /* ViewController.swift */,
+				2CC3F488237807EB00FA157C /* Main.storyboard */,
+				2CC3F48B237807EC00FA157C /* Assets.xcassets */,
+				2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */,
+				2CC3F490237807EC00FA157C /* Info.plist */,
+			);
+			path = SDRling;
+			sourceTree = "<group>";
+		};
+		2CC3F498237807EC00FA157C /* SDRlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				2CC3F499237807EC00FA157C /* SDRlingTests.swift */,
+				2CC3F49B237807EC00FA157C /* Info.plist */,
+			);
+			path = SDRlingTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CC3F480237807EB00FA157C /* SDRling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CC3F49E237807EC00FA157C /* Build configuration list for PBXNativeTarget "SDRling" */;
+			buildPhases = (
+				2CC3F47D237807EB00FA157C /* Sources */,
+				2CC3F47E237807EB00FA157C /* Frameworks */,
+				2CC3F47F237807EB00FA157C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDRling;
+			productName = SDRling;
+			productReference = 2CC3F481237807EB00FA157C /* SDRling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2CC3F494237807EC00FA157C /* SDRlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CC3F4A1237807EC00FA157C /* Build configuration list for PBXNativeTarget "SDRlingTests" */;
+			buildPhases = (
+				2CC3F491237807EC00FA157C /* Sources */,
+				2CC3F492237807EC00FA157C /* Frameworks */,
+				2CC3F493237807EC00FA157C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CC3F497237807EC00FA157C /* PBXTargetDependency */,
+			);
+			name = SDRlingTests;
+			productName = SDRlingTests;
+			productReference = 2CC3F495237807EC00FA157C /* SDRlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CC3F479237807EB00FA157C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Ivan Golikov";
+				TargetAttributes = {
+					2CC3F480237807EB00FA157C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					2CC3F494237807EC00FA157C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 2CC3F480237807EB00FA157C;
+					};
+				};
+			};
+			buildConfigurationList = 2CC3F47C237807EB00FA157C /* Build configuration list for PBXProject "SDRling" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CC3F478237807EB00FA157C;
+			productRefGroup = 2CC3F482237807EB00FA157C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CC3F480237807EB00FA157C /* SDRling */,
+				2CC3F494237807EC00FA157C /* SDRlingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CC3F47F237807EB00FA157C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC3F48F237807EC00FA157C /* LaunchScreen.storyboard in Resources */,
+				2CC3F48C237807EC00FA157C /* Assets.xcassets in Resources */,
+				2CC3F48A237807EB00FA157C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC3F493237807EC00FA157C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CC3F47D237807EB00FA157C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC3F487237807EB00FA157C /* ViewController.swift in Sources */,
+				2CC3F485237807EB00FA157C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC3F491237807EC00FA157C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC3F49A237807EC00FA157C /* SDRlingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CC3F497237807EC00FA157C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CC3F480237807EB00FA157C /* SDRling */;
+			targetProxy = 2CC3F496237807EC00FA157C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2CC3F488237807EB00FA157C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CC3F489237807EB00FA157C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CC3F48E237807EC00FA157C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CC3F49C237807EC00FA157C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CC3F49D237807EC00FA157C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CC3F49F237807EC00FA157C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ27824WW9;
+				INFOPLIST_FILE = SDRling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ivan.SDRling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CC3F4A0237807EC00FA157C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ27824WW9;
+				INFOPLIST_FILE = SDRling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ivan.SDRling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2CC3F4A2237807EC00FA157C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ27824WW9;
+				INFOPLIST_FILE = SDRlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ivan.SDRlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDRling.app/SDRling";
+			};
+			name = Debug;
+		};
+		2CC3F4A3237807EC00FA157C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ27824WW9;
+				INFOPLIST_FILE = SDRlingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ivan.SDRlingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDRling.app/SDRling";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CC3F47C237807EB00FA157C /* Build configuration list for PBXProject "SDRling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CC3F49C237807EC00FA157C /* Debug */,
+				2CC3F49D237807EC00FA157C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CC3F49E237807EC00FA157C /* Build configuration list for PBXNativeTarget "SDRling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CC3F49F237807EC00FA157C /* Debug */,
+				2CC3F4A0237807EC00FA157C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CC3F4A1237807EC00FA157C /* Build configuration list for PBXNativeTarget "SDRlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CC3F4A2237807EC00FA157C /* Debug */,
+				2CC3F4A3237807EC00FA157C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CC3F479237807EB00FA157C /* Project object */;
+}
