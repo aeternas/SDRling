@@ -1,10 +1,33 @@
 aliases:
   - &bundle_install
     name: Execute `bundle install`
-    command: bundle install
+    command: |
+      echo "ruby-2.4" > ~/.ruby-version && \
+      bundle install --path vendor/bundle
+  - &restore_gem
+    keys:
+      - gem-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+      # Fallback in case checksum fails
+      - gem-{{ arch }}-{{ .Branch }}-
+      # Fallback in case this is a first-time run on a fork
+      - gem-{{ arch }}-master-
+  - &save_gem
+    paths:
+      - ./vendor/bundle
+    key: gem-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+  - &restore_cocoapods
+    keys:
+      - cocoapods-{{ arch }}-{{ .Branch }}-{{ checksum "Podfile.lock" }}
+      # Fallback to any other branch
+      - cocoapods-{{ arch }}-master-{{ checksum "Podfile.lock" }}
+  - &save_cocoapods
+    paths:
+      - ~/.cocoapods
+      - Pods
+    key: cocoapods-{{ arch }}-{{ .Branch }}-{{ checksum "Podfile.lock" }}
   - &install_cocoapods
     name: Install CocoaPods
-    command: pod install
+    command: bundle exec pod install
 version: 2
 jobs:
   build:
@@ -12,7 +35,12 @@ jobs:
       xcode: "10.3.0"
     steps:
       - checkout
+      - restore_cache: *restore_gem
       - run: *bundle_install
+      - save_cache: *save_gem
+      - restore_cache: *restore_cocoapods
+      - run: *install_cocoapods
+      - save_cache: *save_cocoapods
       - run:
           name: Build and run tests
           command: bundle exec fastlane scan
