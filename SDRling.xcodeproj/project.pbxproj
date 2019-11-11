@@ -12,6 +12,8 @@
 		2CC3F48C237807EC00FA157C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48B237807EC00FA157C /* Assets.xcassets */; };
 		2CC3F48F237807EC00FA157C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */; };
 		2CC3F49A237807EC00FA157C /* SDRlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F499237807EC00FA157C /* SDRlingTests.swift */; };
+		A5BC85AE12CA7AF6E01EF123 /* Pods_SDRling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B780262D92359B6FF2BFC80B /* Pods_SDRling.framework */; };
+		FF0EB4F689F0477C117B1FB1 /* Pods_SDRlingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1637BBD6D49F6F7209EB987F /* Pods_SDRlingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0895EBED3A3DDE4E4150F947 /* Pods-SDRling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRling.release.xcconfig"; path = "Target Support Files/Pods-SDRling/Pods-SDRling.release.xcconfig"; sourceTree = "<group>"; };
+		1637BBD6D49F6F7209EB987F /* Pods_SDRlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDRlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B434C564366B284C975CF0 /* Pods-SDRlingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRlingTests.debug.xcconfig"; path = "Target Support Files/Pods-SDRlingTests/Pods-SDRlingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2CC3F481237807EB00FA157C /* SDRling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDRling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC3F484237807EB00FA157C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC3F486237807EB00FA157C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		2CC3F495237807EC00FA157C /* SDRlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDRlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC3F499237807EC00FA157C /* SDRlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDRlingTests.swift; sourceTree = "<group>"; };
 		2CC3F49B237807EC00FA157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		439227F3EB32FF7873716FE4 /* Pods-SDRlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRlingTests.release.xcconfig"; path = "Target Support Files/Pods-SDRlingTests/Pods-SDRlingTests.release.xcconfig"; sourceTree = "<group>"; };
+		84290205D94776DB69ED3BAA /* Pods-SDRling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRling.debug.xcconfig"; path = "Target Support Files/Pods-SDRling/Pods-SDRling.debug.xcconfig"; sourceTree = "<group>"; };
+		B780262D92359B6FF2BFC80B /* Pods_SDRling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDRling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BC85AE12CA7AF6E01EF123 /* Pods_SDRling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0EB4F689F0477C117B1FB1 /* Pods_SDRlingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,8 @@
 				2CC3F483237807EB00FA157C /* SDRling */,
 				2CC3F498237807EC00FA157C /* SDRlingTests */,
 				2CC3F482237807EB00FA157C /* Products */,
+				6C7C1EAD1FBE33636EB04932 /* Pods */,
+				75341C273F529A556880B94B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +105,27 @@
 			path = SDRlingTests;
 			sourceTree = "<group>";
 		};
+		6C7C1EAD1FBE33636EB04932 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84290205D94776DB69ED3BAA /* Pods-SDRling.debug.xcconfig */,
+				0895EBED3A3DDE4E4150F947 /* Pods-SDRling.release.xcconfig */,
+				26B434C564366B284C975CF0 /* Pods-SDRlingTests.debug.xcconfig */,
+				439227F3EB32FF7873716FE4 /* Pods-SDRlingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		75341C273F529A556880B94B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B780262D92359B6FF2BFC80B /* Pods_SDRling.framework */,
+				1637BBD6D49F6F7209EB987F /* Pods_SDRlingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC3F49E237807EC00FA157C /* Build configuration list for PBXNativeTarget "SDRling" */;
 			buildPhases = (
+				8B087A2C5EA7F516917297C9 /* [CP] Check Pods Manifest.lock */,
 				2CC3F47D237807EB00FA157C /* Sources */,
 				2CC3F47E237807EB00FA157C /* Frameworks */,
 				2CC3F47F237807EB00FA157C /* Resources */,
@@ -117,6 +151,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC3F4A1237807EC00FA157C /* Build configuration list for PBXNativeTarget "SDRlingTests" */;
 			buildPhases = (
+				C4D3DA81AEBE8EB7D06B6CBA /* [CP] Check Pods Manifest.lock */,
 				2CC3F491237807EC00FA157C /* Sources */,
 				2CC3F492237807EC00FA157C /* Frameworks */,
 				2CC3F493237807EC00FA157C /* Resources */,
@@ -187,6 +222,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B087A2C5EA7F516917297C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDRling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D3DA81AEBE8EB7D06B6CBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDRlingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CC3F47D237807EB00FA157C /* Sources */ = {
@@ -346,6 +428,7 @@
 		};
 		2CC3F49F237807EC00FA157C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84290205D94776DB69ED3BAA /* Pods-SDRling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -364,6 +447,7 @@
 		};
 		2CC3F4A0237807EC00FA157C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0895EBED3A3DDE4E4150F947 /* Pods-SDRling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +466,7 @@
 		};
 		2CC3F4A2237807EC00FA157C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B434C564366B284C975CF0 /* Pods-SDRlingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -403,6 +488,7 @@
 		};
 		2CC3F4A3237807EC00FA157C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439227F3EB32FF7873716FE4 /* Pods-SDRlingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
