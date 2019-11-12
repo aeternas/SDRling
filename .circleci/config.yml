@@ -7,8 +7,6 @@ aliases:
       - gem-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
       # Fallback in case checksum fails
       - gem-{{ arch }}-{{ .Branch }}-
-      # Fallback in case this is a first-time run on a fork
-      - gem-{{ arch }}-master-
   - &save_gem
     paths:
       - ./vendor/bundle
