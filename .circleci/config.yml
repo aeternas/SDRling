@@ -37,6 +37,7 @@ jobs:
   build:
     macos:
       xcode: "10.3.0"
+    working_directory: ~/project
     steps:
       - *git_checkout
       - restore_cache: *restore_gem
