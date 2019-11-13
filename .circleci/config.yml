@@ -39,6 +39,7 @@ jobs:
       xcode: "10.3.0"
     working_directory: ~/project
     steps:
+      - run: pwd && ls -lia
       - *git_checkout
       - restore_cache: *restore_gem
       - run: *bundle_install
