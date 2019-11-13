@@ -4,8 +4,6 @@ git_checkout: &git_checkout
     command: |
       mkdir -p ~/.ssh && \
       echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config && \
-      ls -lia && \
-      pwd && \
       git clone --depth=1 -b $CIRCLE_BRANCH $CIRCLE_REPOSITORY_URL ./ && \
       git checkout $CIRCLE_SHA1
 aliases:
@@ -39,9 +37,7 @@ jobs:
   build:
     macos:
       xcode: "10.3.0"
-    working_directory: ~/project
     steps:
-      - run: pwd && ls -lia
       - *git_checkout
       - restore_cache: *restore_gem
       - run: *bundle_install
