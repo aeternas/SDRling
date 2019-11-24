@@ -137,6 +137,7 @@
 				2CC3F47D237807EB00FA157C /* Sources */,
 				2CC3F47E237807EB00FA157C /* Frameworks */,
 				2CC3F47F237807EB00FA157C /* Resources */,
+				57A2CC68ABF9F02F8315C15D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +225,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		57A2CC68ABF9F02F8315C15D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDRling/Pods-SDRling-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SDRling/Pods-SDRling-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDRling/Pods-SDRling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8B087A2C5EA7F516917297C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
