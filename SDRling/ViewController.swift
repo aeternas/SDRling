@@ -4,7 +4,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+    lazy var label: UILabel = UILabel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.addSubview(label)
     }
 }
