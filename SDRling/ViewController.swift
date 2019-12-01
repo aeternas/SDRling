@@ -9,7 +9,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        addSubviews()
+    }
 
+    private func addSubviews() {
         view.addSubview(label)
     }
 }
