@@ -9,10 +9,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = UIViewController()
+        let viewController = MenuViewController()
         viewController.view.backgroundColor = UIColor.clear
-        window!.rootViewController = viewController
-        window!.makeKeyAndVisible()
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
         return true
     }
 
