@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3745EE2396E55100B046B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3745ED2396E55100B046B0 /* MenuViewController.swift */; };
+		2C3745F02396E59600B046B0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3745EF2396E59600B046B0 /* MenuView.swift */; };
 		2CC3F485237807EB00FA157C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F484237807EB00FA157C /* AppDelegate.swift */; };
 		2CC3F487237807EB00FA157C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F486237807EB00FA157C /* ViewController.swift */; };
 		2CC3F48C237807EC00FA157C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48B237807EC00FA157C /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		0895EBED3A3DDE4E4150F947 /* Pods-SDRling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRling.release.xcconfig"; path = "Target Support Files/Pods-SDRling/Pods-SDRling.release.xcconfig"; sourceTree = "<group>"; };
 		1637BBD6D49F6F7209EB987F /* Pods_SDRlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDRlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B434C564366B284C975CF0 /* Pods-SDRlingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRlingTests.debug.xcconfig"; path = "Target Support Files/Pods-SDRlingTests/Pods-SDRlingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C3745ED2396E55100B046B0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2C3745EF2396E59600B046B0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		2CC3F481237807EB00FA157C /* SDRling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDRling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC3F484237807EB00FA157C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC3F486237807EB00FA157C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 			children = (
 				2CC3F484237807EB00FA157C /* AppDelegate.swift */,
 				2CC3F486237807EB00FA157C /* ViewController.swift */,
+				2C3745ED2396E55100B046B0 /* MenuViewController.swift */,
+				2C3745EF2396E59600B046B0 /* MenuView.swift */,
 				2CC3F48B237807EC00FA157C /* Assets.xcassets */,
 				2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */,
 				2CC3F490237807EC00FA157C /* Info.plist */,
@@ -113,7 +119,6 @@
 				26B434C564366B284C975CF0 /* Pods-SDRlingTests.debug.xcconfig */,
 				439227F3EB32FF7873716FE4 /* Pods-SDRlingTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC3F487237807EB00FA157C /* ViewController.swift in Sources */,
+				2C3745F02396E59600B046B0 /* MenuView.swift in Sources */,
+				2C3745EE2396E55100B046B0 /* MenuViewController.swift in Sources */,
 				2CC3F485237807EB00FA157C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
