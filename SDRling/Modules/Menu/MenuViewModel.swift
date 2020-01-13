@@ -13,7 +13,7 @@ public protocol MenuViewModelInput: AnyObject {
 }
 
 public protocol MenuViewModelOutput: AnyObject {
-
+    func openListening()
 }
 
 public protocol MenuViewModel: MenuViewModelInput, MenuViewModelOutput { }

@@ -3,4 +3,7 @@
 import Foundation
 
 class MenuViewModelImpl: MenuViewModel {
+    func openListening() {
+        //
+    }
 }
