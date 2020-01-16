@@ -3,7 +3,6 @@
 import UIKit
 
 public class RouterImpl: Router {
-
     public func listeningRoute() {
         let step = RouteStepImpl(ListeningBuilder())
         let top = getTopController()

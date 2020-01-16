@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = MenuViewController()
+        let viewController = MenuViewController(router: RouterImpl())
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         return true
