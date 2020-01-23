@@ -6,7 +6,7 @@ class MenuView: UIView {
 
     let listenButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Menu", for: .normal)
+        button.setTitle(Configuration.menuTitle, for: .normal)
         return button
     }()
 
@@ -32,5 +32,11 @@ class MenuView: UIView {
         verticalStackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         verticalStackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         verticalStackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    }
+}
+
+extension MenuView {
+    enum Configuration {
+        static let menuTitle = "Menu"
     }
 }
