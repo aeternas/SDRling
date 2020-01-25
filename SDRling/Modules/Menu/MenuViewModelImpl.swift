@@ -3,7 +3,13 @@
 import Foundation
 
 class MenuViewModelImpl: MenuViewModel {
+    let router: Router
+
+    init(router: Router) {
+        self.router = router
+    }
+
     func openListening() {
-        //
+        router.listeningRoute()
     }
 }
