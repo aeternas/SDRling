@@ -5,8 +5,8 @@ import UIKit
 public class RouterImpl: Router {
     public func listeningRoute() {
         let step = RouteStepImpl(ListeningBuilder())
-        let top = getTopController()
-        top?.navigationController?.pushViewController(step.vc, animated: true)
+        let navigationController = topNavigation()
+        navigationController?.pushViewController(step.vc, animated: true)
     }
 
     private func getTopController() -> UIViewController? {
@@ -15,5 +15,16 @@ public class RouterImpl: Router {
             topController = presentedViewController
         }
         return topController
+    }
+
+    private func topNavigation(_ viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UINavigationController? {
+        if let nav = viewController as? UINavigationController {
+            return nav
+        }
+        guard
+            let tab = viewController as? UITabBarController,
+            let selected = tab.selectedViewController
+        else { return viewController?.navigationController }
+        return selected.navigationController
     }
 }

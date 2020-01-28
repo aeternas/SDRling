@@ -9,8 +9,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = MenuViewController(router: RouterImpl())
-        window?.rootViewController = viewController
+        let viewController = MenuViewController(viewModel: MenuViewModelImpl(router: RouterImpl()))
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true
     }
