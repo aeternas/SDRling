@@ -2,7 +2,7 @@
 
 import UIKit
 
-class MenuView: UIView {
+public final class MenuView: UIView {
 
     let listenButton: UIButton = {
         let button = UIButton(type: .system)
