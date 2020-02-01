@@ -2,6 +2,6 @@
 
 import UIKit
 
-public class ListeningViewController: UIViewController {
+public final class ListeningViewController: UIViewController {
 
 }

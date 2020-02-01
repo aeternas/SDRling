@@ -4,7 +4,7 @@ import RxCocoa
 import RxSwift
 import UIKit
 
-class MenuViewController: UIViewController {
+final class MenuViewController: UIViewController {
     let viewModel: MenuViewModel
 
     private let disposeBag = DisposeBag()

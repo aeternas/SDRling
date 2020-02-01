@@ -2,7 +2,7 @@
 
 import UIKit
 
-public class RouterImpl: Router {
+public final class RouterImpl: Router {
     public func listeningRoute() {
         let step = RouteStepImpl(ListeningBuilder())
         let navigationController = topNavigation()

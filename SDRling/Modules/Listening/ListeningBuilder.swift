@@ -2,7 +2,7 @@
 
 import Foundation
 
-class ListeningBuilder: ModuleBuilder {
+final class ListeningBuilder: ModuleBuilder {
     func build() -> ListeningViewController {
         return ListeningViewController()
     }
