@@ -11,6 +11,8 @@
 		2C3745F02396E59600B046B0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3745EF2396E59600B046B0 /* MenuView.swift */; };
 		2C8BD44123A549CF00BF52B2 /* MenuViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BD44023A549CF00BF52B2 /* MenuViewModelImpl.swift */; };
 		2C8BD44323A549E800BF52B2 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BD44223A549E800BF52B2 /* MenuViewModel.swift */; };
+		2C98769823E6BD5E00E11E6B /* ListeningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98769723E6BD5E00E11E6B /* ListeningViewModel.swift */; };
+		2C98769A23E6C15D00E11E6B /* ListeningViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98769923E6C15D00E11E6B /* ListeningViewModelImpl.swift */; };
 		2CBED7AA23A53AFA002F80C1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBED7A923A53AFA002F80C1 /* Router.swift */; };
 		2CBED7AC23A53B0E002F80C1 /* RouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBED7AB23A53B0E002F80C1 /* RouterImpl.swift */; };
 		2CBED7AE23A53B7F002F80C1 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBED7AD23A53B7F002F80C1 /* ModuleBuilder.swift */; };
@@ -46,6 +48,8 @@
 		2C3745EF2396E59600B046B0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		2C8BD44023A549CF00BF52B2 /* MenuViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModelImpl.swift; sourceTree = "<group>"; };
 		2C8BD44223A549E800BF52B2 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		2C98769723E6BD5E00E11E6B /* ListeningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningViewModel.swift; sourceTree = "<group>"; };
+		2C98769923E6C15D00E11E6B /* ListeningViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningViewModelImpl.swift; sourceTree = "<group>"; };
 		2CBED7A923A53AFA002F80C1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2CBED7AB23A53B0E002F80C1 /* RouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImpl.swift; sourceTree = "<group>"; };
 		2CBED7AD23A53B7F002F80C1 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 			children = (
 				2CBED7B423A541E0002F80C1 /* ListeningViewController.swift */,
 				2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */,
+				2C98769923E6C15D00E11E6B /* ListeningViewModelImpl.swift */,
+				2C98769723E6BD5E00E11E6B /* ListeningViewModel.swift */,
 				2CBEE93823A5446C002F80C1 /* ListeningBuilder.swift */,
 			);
 			path = Listening;
@@ -378,6 +384,7 @@
 			files = (
 				2CC3F487237807EB00FA157C /* ViewController.swift in Sources */,
 				2C8BD44123A549CF00BF52B2 /* MenuViewModelImpl.swift in Sources */,
+				2C98769A23E6C15D00E11E6B /* ListeningViewModelImpl.swift in Sources */,
 				2C3745F02396E59600B046B0 /* MenuView.swift in Sources */,
 				2CBED7B723A5424D002F80C1 /* RouteStep.swift in Sources */,
 				2CBED7AC23A53B0E002F80C1 /* RouterImpl.swift in Sources */,
@@ -386,6 +393,7 @@
 				2CBED7B523A541E0002F80C1 /* ListeningViewController.swift in Sources */,
 				2CDFC6A523E49E1300C8FA2C /* ListeningView.swift in Sources */,
 				2CBED7AE23A53B7F002F80C1 /* ModuleBuilder.swift in Sources */,
+				2C98769823E6BD5E00E11E6B /* ListeningViewModel.swift in Sources */,
 				2C3745EE2396E55100B046B0 /* MenuViewController.swift in Sources */,
 				2C8BD44323A549E800BF52B2 /* MenuViewModel.swift in Sources */,
 				2CC3F485237807EB00FA157C /* AppDelegate.swift in Sources */,
