@@ -6,7 +6,7 @@ public final class MenuView: UIView {
 
     let listenButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle(Configuration.menuTitle, for: .normal)
+        button.setTitle(Constants.menuTitle, for: .normal)
         return button
     }()
 
@@ -33,10 +33,10 @@ public final class MenuView: UIView {
         verticalStackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         verticalStackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
-}
 
-extension MenuView {
-    enum Configuration {
+    // MARK: - Constants
+
+    enum Constants {
         static let menuTitle = "Menu"
     }
 }
