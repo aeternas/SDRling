@@ -4,6 +4,6 @@ import Foundation
 
 final class ListeningBuilder: ModuleBuilder {
     func build() -> ListeningViewController {
-        return ListeningViewController()
+        return ListeningViewController(viewModel: ListeningViewModelImpl())
     }
 }
