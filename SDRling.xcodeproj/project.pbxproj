@@ -26,6 +26,7 @@
 		2CC3F48F237807EC00FA157C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */; };
 		2CC3F49A237807EC00FA157C /* SDRlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F499237807EC00FA157C /* SDRlingTests.swift */; };
 		2CDFC6A523E49E1300C8FA2C /* ListeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */; };
+		2CF47FDE23EB35B500E07216 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF47FDD23EB35B500E07216 /* Station.swift */; };
 		A5BC85AE12CA7AF6E01EF123 /* Pods_SDRling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B780262D92359B6FF2BFC80B /* Pods_SDRling.framework */; };
 		FF0EB4F689F0477C117B1FB1 /* Pods_SDRlingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1637BBD6D49F6F7209EB987F /* Pods_SDRlingTests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		2CC3F499237807EC00FA157C /* SDRlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDRlingTests.swift; sourceTree = "<group>"; };
 		2CC3F49B237807EC00FA157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningView.swift; sourceTree = "<group>"; };
+		2CF47FDD23EB35B500E07216 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		439227F3EB32FF7873716FE4 /* Pods-SDRlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRlingTests.release.xcconfig"; path = "Target Support Files/Pods-SDRlingTests/Pods-SDRlingTests.release.xcconfig"; sourceTree = "<group>"; };
 		84290205D94776DB69ED3BAA /* Pods-SDRling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRling.debug.xcconfig"; path = "Target Support Files/Pods-SDRling/Pods-SDRling.debug.xcconfig"; sourceTree = "<group>"; };
 		B780262D92359B6FF2BFC80B /* Pods_SDRling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDRling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 				2CF47FDA23EB32BE00E07216 /* ViewModel */,
 				2CBED7B423A541E0002F80C1 /* ListeningViewController.swift */,
 				2CBEE93823A5446C002F80C1 /* ListeningBuilder.swift */,
+				2CF47FDD23EB35B500E07216 /* Station.swift */,
 			);
 			path = Listening;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				2CBED7B923A5426A002F80C1 /* RouteStepImpl.swift in Sources */,
 				2CBED7B523A541E0002F80C1 /* ListeningViewController.swift in Sources */,
 				2CDFC6A523E49E1300C8FA2C /* ListeningView.swift in Sources */,
+				2CF47FDE23EB35B500E07216 /* Station.swift in Sources */,
 				2CBED7AE23A53B7F002F80C1 /* ModuleBuilder.swift in Sources */,
 				2C98769823E6BD5E00E11E6B /* ListeningViewModel.swift in Sources */,
 				2C3745EE2396E55100B046B0 /* MenuViewController.swift in Sources */,
