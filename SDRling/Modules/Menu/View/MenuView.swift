@@ -26,12 +26,16 @@ public final class MenuView: UIView {
 
     func makeConstraints() {
         verticalStackView.translatesAutoresizingMaskIntoConstraints = false
-        verticalStackView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        verticalStackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        verticalStackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        verticalStackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        verticalStackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        verticalStackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        NSLayoutConstraint.activate(
+            [
+                verticalStackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+                verticalStackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+                verticalStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+                verticalStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+                verticalStackView.topAnchor.constraint(equalTo: topAnchor),
+                verticalStackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            ]
+        )
     }
 
     // MARK: - Constants

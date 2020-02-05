@@ -144,9 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				2C3745ED2396E55100B046B0 /* MenuViewController.swift */,
-				2C8BD44023A549CF00BF52B2 /* MenuViewModelImpl.swift */,
-				2C8BD44223A549E800BF52B2 /* MenuViewModel.swift */,
-				2C3745EF2396E59600B046B0 /* MenuView.swift */,
+				2CF47FDB23EB32CB00E07216 /* ViewModel */,
+				2CF47FDC23EB32D200E07216 /* View */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -154,10 +153,9 @@
 		2CBED7B323A54037002F80C1 /* Listening */ = {
 			isa = PBXGroup;
 			children = (
+				2CF47FD923EB32B100E07216 /* View */,
+				2CF47FDA23EB32BE00E07216 /* ViewModel */,
 				2CBED7B423A541E0002F80C1 /* ListeningViewController.swift */,
-				2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */,
-				2C98769923E6C15D00E11E6B /* ListeningViewModelImpl.swift */,
-				2C98769723E6BD5E00E11E6B /* ListeningViewModel.swift */,
 				2CBEE93823A5446C002F80C1 /* ListeningBuilder.swift */,
 			);
 			path = Listening;
@@ -204,6 +202,40 @@
 				2CC3F49B237807EC00FA157C /* Info.plist */,
 			);
 			path = SDRlingTests;
+			sourceTree = "<group>";
+		};
+		2CF47FD923EB32B100E07216 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CF47FDA23EB32BE00E07216 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C98769923E6C15D00E11E6B /* ListeningViewModelImpl.swift */,
+				2C98769723E6BD5E00E11E6B /* ListeningViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2CF47FDB23EB32CB00E07216 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C8BD44023A549CF00BF52B2 /* MenuViewModelImpl.swift */,
+				2C8BD44223A549E800BF52B2 /* MenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2CF47FDC23EB32D200E07216 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C3745EF2396E59600B046B0 /* MenuView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6C7C1EAD1FBE33636EB04932 /* Pods */ = {
