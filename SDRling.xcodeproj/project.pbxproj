@@ -22,11 +22,11 @@
 		2CBED7B923A5426A002F80C1 /* RouteStepImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBED7B823A5426A002F80C1 /* RouteStepImpl.swift */; };
 		2CBEE93923A5446C002F80C1 /* ListeningBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBEE93823A5446C002F80C1 /* ListeningBuilder.swift */; };
 		2CC3F485237807EB00FA157C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F484237807EB00FA157C /* AppDelegate.swift */; };
-		2CC3F487237807EB00FA157C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F486237807EB00FA157C /* ViewController.swift */; };
 		2CC3F48C237807EC00FA157C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48B237807EC00FA157C /* Assets.xcassets */; };
 		2CC3F48F237807EC00FA157C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */; };
 		2CC3F49A237807EC00FA157C /* SDRlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F499237807EC00FA157C /* SDRlingTests.swift */; };
 		2CDFC6A523E49E1300C8FA2C /* ListeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */; };
+		2CF47FDE23EB35B500E07216 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF47FDD23EB35B500E07216 /* Station.swift */; };
 		A5BC85AE12CA7AF6E01EF123 /* Pods_SDRling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B780262D92359B6FF2BFC80B /* Pods_SDRling.framework */; };
 		FF0EB4F689F0477C117B1FB1 /* Pods_SDRlingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1637BBD6D49F6F7209EB987F /* Pods_SDRlingTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,6 @@
 		2CBEE93823A5446C002F80C1 /* ListeningBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningBuilder.swift; sourceTree = "<group>"; };
 		2CC3F481237807EB00FA157C /* SDRling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDRling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC3F484237807EB00FA157C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CC3F486237807EB00FA157C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CC3F48B237807EC00FA157C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC3F48E237807EC00FA157C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CC3F490237807EC00FA157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		2CC3F499237807EC00FA157C /* SDRlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDRlingTests.swift; sourceTree = "<group>"; };
 		2CC3F49B237807EC00FA157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningView.swift; sourceTree = "<group>"; };
+		2CF47FDD23EB35B500E07216 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		439227F3EB32FF7873716FE4 /* Pods-SDRlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRlingTests.release.xcconfig"; path = "Target Support Files/Pods-SDRlingTests/Pods-SDRlingTests.release.xcconfig"; sourceTree = "<group>"; };
 		84290205D94776DB69ED3BAA /* Pods-SDRling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRling.debug.xcconfig"; path = "Target Support Files/Pods-SDRling/Pods-SDRling.debug.xcconfig"; sourceTree = "<group>"; };
 		B780262D92359B6FF2BFC80B /* Pods_SDRling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDRling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,9 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				2C3745ED2396E55100B046B0 /* MenuViewController.swift */,
-				2C8BD44023A549CF00BF52B2 /* MenuViewModelImpl.swift */,
-				2C8BD44223A549E800BF52B2 /* MenuViewModel.swift */,
-				2C3745EF2396E59600B046B0 /* MenuView.swift */,
+				2CF47FDB23EB32CB00E07216 /* ViewModel */,
+				2CF47FDC23EB32D200E07216 /* View */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -154,11 +153,11 @@
 		2CBED7B323A54037002F80C1 /* Listening */ = {
 			isa = PBXGroup;
 			children = (
+				2CF47FD923EB32B100E07216 /* View */,
+				2CF47FDA23EB32BE00E07216 /* ViewModel */,
 				2CBED7B423A541E0002F80C1 /* ListeningViewController.swift */,
-				2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */,
-				2C98769923E6C15D00E11E6B /* ListeningViewModelImpl.swift */,
-				2C98769723E6BD5E00E11E6B /* ListeningViewModel.swift */,
 				2CBEE93823A5446C002F80C1 /* ListeningBuilder.swift */,
+				2CF47FDD23EB35B500E07216 /* Station.swift */,
 			);
 			path = Listening;
 			sourceTree = "<group>";
@@ -189,7 +188,6 @@
 				2CBED7B123A5401E002F80C1 /* Modules */,
 				2CBED7B023A5400D002F80C1 /* Core */,
 				2CC3F484237807EB00FA157C /* AppDelegate.swift */,
-				2CC3F486237807EB00FA157C /* ViewController.swift */,
 				2CC3F48B237807EC00FA157C /* Assets.xcassets */,
 				2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */,
 				2CC3F490237807EC00FA157C /* Info.plist */,
@@ -204,6 +202,40 @@
 				2CC3F49B237807EC00FA157C /* Info.plist */,
 			);
 			path = SDRlingTests;
+			sourceTree = "<group>";
+		};
+		2CF47FD923EB32B100E07216 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CF47FDA23EB32BE00E07216 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C98769923E6C15D00E11E6B /* ListeningViewModelImpl.swift */,
+				2C98769723E6BD5E00E11E6B /* ListeningViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2CF47FDB23EB32CB00E07216 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2C8BD44023A549CF00BF52B2 /* MenuViewModelImpl.swift */,
+				2C8BD44223A549E800BF52B2 /* MenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2CF47FDC23EB32D200E07216 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C3745EF2396E59600B046B0 /* MenuView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6C7C1EAD1FBE33636EB04932 /* Pods */ = {
@@ -393,7 +425,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC3F487237807EB00FA157C /* ViewController.swift in Sources */,
 				2C8BD44123A549CF00BF52B2 /* MenuViewModelImpl.swift in Sources */,
 				2C98769A23E6C15D00E11E6B /* ListeningViewModelImpl.swift in Sources */,
 				2C3745F02396E59600B046B0 /* MenuView.swift in Sources */,
@@ -404,6 +435,7 @@
 				2CBED7B923A5426A002F80C1 /* RouteStepImpl.swift in Sources */,
 				2CBED7B523A541E0002F80C1 /* ListeningViewController.swift in Sources */,
 				2CDFC6A523E49E1300C8FA2C /* ListeningView.swift in Sources */,
+				2CF47FDE23EB35B500E07216 /* Station.swift in Sources */,
 				2CBED7AE23A53B7F002F80C1 /* ModuleBuilder.swift in Sources */,
 				2C98769823E6BD5E00E11E6B /* ListeningViewModel.swift in Sources */,
 				2C3745EE2396E55100B046B0 /* MenuViewController.swift in Sources */,
