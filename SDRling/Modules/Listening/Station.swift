@@ -2,6 +2,6 @@
 
 import Foundation
 
-struct Station {
+struct Station: Equatable {
     
 }
