@@ -2,7 +2,7 @@
 
 import Foundation
 
-class MenuViewModelImpl: MenuViewModel {
+final class MenuViewModelImpl: MenuViewModel {
     let router: Router
 
     init(router: Router) {
