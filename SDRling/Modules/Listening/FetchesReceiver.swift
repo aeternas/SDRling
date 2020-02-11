@@ -2,4 +2,6 @@
 
 import Foundation
 
-protocol FetchesReceiver: AnyObject { }
+protocol FetchesReceiver: AnyObject {
+    func setupReceiverConnection()
+}
