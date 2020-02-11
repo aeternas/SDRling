@@ -18,5 +18,7 @@ public final class ListeningViewModelImpl: ListeningViewModel {
         frequencyValue = value
     }
 
-    public func connect() { }
+    public func connect() {
+        receiverService.setupReceiverConnection()
+    }
 }
