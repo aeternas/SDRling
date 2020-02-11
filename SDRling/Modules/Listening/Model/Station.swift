@@ -3,5 +3,5 @@
 import Foundation
 
 struct Station: Equatable {
-    
+    let frequency: String
 }
