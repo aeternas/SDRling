@@ -25,6 +25,9 @@
 		2CC3F48C237807EC00FA157C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48B237807EC00FA157C /* Assets.xcassets */; };
 		2CC3F48F237807EC00FA157C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC3F48D237807EC00FA157C /* LaunchScreen.storyboard */; };
 		2CC3F49A237807EC00FA157C /* SDRlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3F499237807EC00FA157C /* SDRlingTests.swift */; };
+		2CD0238123F32D3E00A48A1F /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0238023F32D3E00A48A1F /* Stream.swift */; };
+		2CD0238423F32E2100A48A1F /* ReceiverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0238323F32E2100A48A1F /* ReceiverService.swift */; };
+		2CD0238623F32E3E00A48A1F /* FetchesReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0238523F32E3E00A48A1F /* FetchesReceiver.swift */; };
 		2CDFC6A523E49E1300C8FA2C /* ListeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */; };
 		2CF47FDE23EB35B500E07216 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF47FDD23EB35B500E07216 /* Station.swift */; };
 		A5BC85AE12CA7AF6E01EF123 /* Pods_SDRling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B780262D92359B6FF2BFC80B /* Pods_SDRling.framework */; };
@@ -67,6 +70,9 @@
 		2CC3F495237807EC00FA157C /* SDRlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDRlingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC3F499237807EC00FA157C /* SDRlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDRlingTests.swift; sourceTree = "<group>"; };
 		2CC3F49B237807EC00FA157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CD0238023F32D3E00A48A1F /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		2CD0238323F32E2100A48A1F /* ReceiverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverService.swift; sourceTree = "<group>"; };
+		2CD0238523F32E3E00A48A1F /* FetchesReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchesReceiver.swift; sourceTree = "<group>"; };
 		2CDFC6A423E49E1300C8FA2C /* ListeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningView.swift; sourceTree = "<group>"; };
 		2CF47FDD23EB35B500E07216 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		439227F3EB32FF7873716FE4 /* Pods-SDRlingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRlingTests.release.xcconfig"; path = "Target Support Files/Pods-SDRlingTests/Pods-SDRlingTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,9 +161,11 @@
 			children = (
 				2CF47FD923EB32B100E07216 /* View */,
 				2CF47FDA23EB32BE00E07216 /* ViewModel */,
+				2CD0238223F32D4800A48A1F /* Model */,
 				2CBED7B423A541E0002F80C1 /* ListeningViewController.swift */,
 				2CBEE93823A5446C002F80C1 /* ListeningBuilder.swift */,
-				2CF47FDD23EB35B500E07216 /* Station.swift */,
+				2CD0238323F32E2100A48A1F /* ReceiverService.swift */,
+				2CD0238523F32E3E00A48A1F /* FetchesReceiver.swift */,
 			);
 			path = Listening;
 			sourceTree = "<group>";
@@ -202,6 +210,15 @@
 				2CC3F49B237807EC00FA157C /* Info.plist */,
 			);
 			path = SDRlingTests;
+			sourceTree = "<group>";
+		};
+		2CD0238223F32D4800A48A1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CF47FDD23EB35B500E07216 /* Station.swift */,
+				2CD0238023F32D3E00A48A1F /* Stream.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2CF47FD923EB32B100E07216 /* View */ = {
@@ -432,12 +449,15 @@
 				2CBED7AC23A53B0E002F80C1 /* RouterImpl.swift in Sources */,
 				2CBED7AA23A53AFA002F80C1 /* Router.swift in Sources */,
 				2C13E61723E9F38A00A73961 /* RxStarscream.swift in Sources */,
+				2CD0238123F32D3E00A48A1F /* Stream.swift in Sources */,
+				2CD0238423F32E2100A48A1F /* ReceiverService.swift in Sources */,
 				2CBED7B923A5426A002F80C1 /* RouteStepImpl.swift in Sources */,
 				2CBED7B523A541E0002F80C1 /* ListeningViewController.swift in Sources */,
 				2CDFC6A523E49E1300C8FA2C /* ListeningView.swift in Sources */,
 				2CF47FDE23EB35B500E07216 /* Station.swift in Sources */,
 				2CBED7AE23A53B7F002F80C1 /* ModuleBuilder.swift in Sources */,
 				2C98769823E6BD5E00E11E6B /* ListeningViewModel.swift in Sources */,
+				2CD0238623F32E3E00A48A1F /* FetchesReceiver.swift in Sources */,
 				2C3745EE2396E55100B046B0 /* MenuViewController.swift in Sources */,
 				2C8BD44323A549E800BF52B2 /* MenuViewModel.swift in Sources */,
 				2CC3F485237807EB00FA157C /* AppDelegate.swift in Sources */,
