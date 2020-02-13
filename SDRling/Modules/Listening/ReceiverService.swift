@@ -19,13 +19,13 @@ class ReceiverService: FetchesReceiver {
         socket = WebSocket(request: request)
         socket?.connect()
 
-        socket?.rx.response.subscribe(onNext: { (response: WebSocketEvent) in
+        socket?.rx.response.subscribe(onNext: { response in
             switch response {
             case .connected:
                 debugPrint("Connected")
-            case .disconnected(let error):
+            case let .disconnected(error):
                 debugPrint("Disconnected with optional error : \(error.debugDescription)")
-            case .message(let msg):
+            case let .message(msg):
                 debugPrint("Message : \(msg)")
             case let .data(data):
                 debugPrint("Data is \(data)")
