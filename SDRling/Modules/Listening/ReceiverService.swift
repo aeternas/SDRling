@@ -22,15 +22,15 @@ class ReceiverService: FetchesReceiver {
         socket?.rx.response.subscribe(onNext: { (response: WebSocketEvent) in
             switch response {
             case .connected:
-                print("Connected")
+                debugPrint("Connected")
             case .disconnected(let error):
-                print("Disconnected with optional error : \(error.debugDescription)")
+                debugPrint("Disconnected with optional error : \(error.debugDescription)")
             case .message(let msg):
-                print("Message : \(msg)")
+                debugPrint("Message : \(msg)")
             case let .data(data):
-                print("Data is \(data)")
+                debugPrint("Data is \(data)")
             case .pong:
-                print("Pong")
+                debugPrint("Pong")
             }
         }).disposed(by: disposeBag)
     }
