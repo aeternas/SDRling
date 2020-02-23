@@ -18,7 +18,6 @@ aliases:
   - &restore_gem
     keys:
       - gem-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-      # Fallback in case checksum fails
       - gem-{{ arch }}-{{ .Branch }}-
   - &save_gem
     paths:
@@ -27,7 +26,6 @@ aliases:
   - &restore_cocoapods
     keys:
       - cocoapods-{{ arch }}-{{ .Branch }}-{{ checksum "Podfile.lock" }}
-      # Fallback to any other branch
       - cocoapods-{{ arch }}-master-{{ checksum "Podfile.lock" }}
   - &save_cocoapods
     paths:
