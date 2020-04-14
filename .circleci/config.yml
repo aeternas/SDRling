@@ -11,7 +11,7 @@ aliases:
   - &replace_vars
     run:
       name: Replace vars
-      command: bash pre_deployment.sh
+      command: bash pre_deployment.sh && cat ./SDRling/Modules/Listening/ReceiverService.swift
   - &bundle_install
     name: Execute `bundle install`
     command: bundle install --path vendor/bundle
