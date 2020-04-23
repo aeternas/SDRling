@@ -5,7 +5,7 @@ import Foundation
 import RxSwift
 import Starscream
 
-class ReceiverService: FetchesReceiver {
+final class ReceiverService: FetchesReceiver {
     let disposeBag = DisposeBag()
     var socket: WebSocket?
 
