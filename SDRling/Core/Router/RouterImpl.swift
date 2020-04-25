@@ -1,12 +1,23 @@
 //  Created by Ivan Golikov on 14.12.2019.
 
-import UIKit
+import RouteComposer
 
 public final class RouterImpl: Router {
     public func listeningRoute() {
-        let step = RouteStepImpl(ListeningBuilder())
-        let navigationController = topNavigation()
-        navigationController?.pushViewController(step.vc, animated: true)
+        let destStep = StepAssembly(
+            finder: ClassFinder<ListeningViewController, Void>(),
+            factory: ListeningBuilder()
+        )
+        .using(UINavigationController.push())
+        .from(SingleContainerStep(
+            finder: ClassFinder<UINavigationController, Void>(),
+            factory: NavigationControllerFactory())
+        )
+        .using(GeneralAction.nilAction())
+        .from(GeneralStep.current())
+        .assemble()
+
+        try? DefaultRouter().navigate(to: destStep, with: ())
     }
 
     private func getTopController() -> UIViewController? {
