@@ -3,6 +3,6 @@
 import Foundation
 
 public protocol ModuleBuilder {
-    associatedtype T
-    func build() -> T
+    associatedtype ViewController
+    func build() -> ViewController
 }
