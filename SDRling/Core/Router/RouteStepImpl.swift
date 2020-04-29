@@ -5,7 +5,7 @@ import UIKit
 public struct RouteStepImpl<VC: UIViewController>: RouteStep {
     public let vc: VC
 
-    init<MB: ModuleBuilder>(_ builder: MB) where MB.T == VC {
+    init<MB: ModuleBuilder>(_ builder: MB) where MB.ViewController == VC {
         vc = builder.build()
     }
 }
