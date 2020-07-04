@@ -1,12 +1,12 @@
 PODS:
   - RouteComposer (2.6.0)
-  - RxCocoa (5.0.1):
+  - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.1):
+  - RxRelay (5.1.1):
     - RxSwift (~> 5)
-  - RxSwift (5.0.1)
-  - Starscream (3.1.1)
+  - RxSwift (5.1.1)
+  - Starscream (4.0.3)
 
 DEPENDENCIES:
   - RouteComposer
@@ -24,11 +24,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   RouteComposer: 6e8fbb70acc07594b0e26360f978336d78e93e7a
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
-  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  Starscream: ef06f0961fff0880bca0604416d61141e4faca67
 
 PODFILE CHECKSUM: 92375f443d3e047109699ce253934b86f3f8e8a0
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
