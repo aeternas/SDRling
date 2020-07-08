@@ -26,7 +26,6 @@ aliases:
   - &restore_cocoapods
     keys:
       - cocoapods-{{ arch }}-{{ .Branch }}-{{ checksum "Podfile.lock" }}
-      - cocoapods-{{ arch }}-master-{{ checksum "Podfile.lock" }}
   - &save_cocoapods
     paths:
       - ~/.cocoapods
