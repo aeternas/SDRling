@@ -1,0 +1,4 @@
+[submodule "RxStarscream"]
+	path = RxStarscream
+	url = https://github.com/aeternas/RxStarscream.git
+	branch = submodule
