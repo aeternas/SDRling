@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C13E61723E9F38A00A73961 /* RxStarscream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13E61623E9F38A00A73961 /* RxStarscream.swift */; };
+		2C2A5E5224BCDAE30084703D /* RxStarscream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2A5E5124BCDAE30084703D /* RxStarscream.swift */; };
 		2C3745EE2396E55100B046B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3745ED2396E55100B046B0 /* MenuViewController.swift */; };
 		2C3745F02396E59600B046B0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3745EF2396E59600B046B0 /* MenuView.swift */; };
 		2C8BD44123A549CF00BF52B2 /* MenuViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8BD44023A549CF00BF52B2 /* MenuViewModelImpl.swift */; };
@@ -48,7 +48,7 @@
 		0895EBED3A3DDE4E4150F947 /* Pods-SDRling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRling.release.xcconfig"; path = "Target Support Files/Pods-SDRling/Pods-SDRling.release.xcconfig"; sourceTree = "<group>"; };
 		1637BBD6D49F6F7209EB987F /* Pods_SDRlingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDRlingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B434C564366B284C975CF0 /* Pods-SDRlingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRlingTests.debug.xcconfig"; path = "Target Support Files/Pods-SDRlingTests/Pods-SDRlingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C13E61623E9F38A00A73961 /* RxStarscream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxStarscream.swift; sourceTree = "<group>"; };
+		2C2A5E5124BCDAE30084703D /* RxStarscream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxStarscream.swift; path = RxStarscream/Source/RxStarscream.swift; sourceTree = SOURCE_ROOT; };
 		2C3745ED2396E55100B046B0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		2C3745EF2396E59600B046B0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		2C8BD44023A549CF00BF52B2 /* MenuViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModelImpl.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		2C13E61823E9F3A400A73961 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				2C13E61623E9F38A00A73961 /* RxStarscream.swift */,
+				2C2A5E5124BCDAE30084703D /* RxStarscream.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -448,7 +448,6 @@
 				2CBED7B723A5424D002F80C1 /* RouteStep.swift in Sources */,
 				2CBED7AC23A53B0E002F80C1 /* RouterImpl.swift in Sources */,
 				2CBED7AA23A53AFA002F80C1 /* Router.swift in Sources */,
-				2C13E61723E9F38A00A73961 /* RxStarscream.swift in Sources */,
 				2CD0238123F32D3E00A48A1F /* Stream.swift in Sources */,
 				2CD0238423F32E2100A48A1F /* ReceiverService.swift in Sources */,
 				2CBED7B923A5426A002F80C1 /* RouteStepImpl.swift in Sources */,
@@ -459,6 +458,7 @@
 				2C98769823E6BD5E00E11E6B /* ListeningViewModel.swift in Sources */,
 				2CD0238623F32E3E00A48A1F /* FetchesReceiver.swift in Sources */,
 				2C3745EE2396E55100B046B0 /* MenuViewController.swift in Sources */,
+				2C2A5E5224BCDAE30084703D /* RxStarscream.swift in Sources */,
 				2C8BD44323A549E800BF52B2 /* MenuViewModel.swift in Sources */,
 				2CC3F485237807EB00FA157C /* AppDelegate.swift in Sources */,
 				2CBEE93923A5446C002F80C1 /* ListeningBuilder.swift in Sources */,
