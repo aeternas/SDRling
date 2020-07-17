@@ -23,14 +23,24 @@ final class ReceiverService: FetchesReceiver {
             switch response {
             case .connected:
                 debugPrint("Connected")
-            case let .disconnected(error):
+            case let .disconnected(error, _):
                 debugPrint("Disconnected with optional error : \(error.debugDescription)")
-            case let .message(msg):
+            case let .text(msg):
                 debugPrint("Message : \(msg)")
-            case let .data(data):
+            case let .binary(data):
                 debugPrint("Data is \(data)")
             case .pong:
                 debugPrint("Pong")
+            case .ping:
+                debugPrint("Ping")
+            case .error(_):
+                debugPrint("Error")
+            case .viabilityChanged:
+                debugPrint("viabilityChanged")
+            case .reconnectSuggested:
+                debugPrint("reconnectSuggested")
+            case .cancelled:
+                debugPrint("cancelled")
             }
         }).disposed(by: disposeBag)
     }
