@@ -33,8 +33,8 @@ final class ReceiverService: FetchesReceiver {
                 debugPrint("Pong")
             case .ping:
                 debugPrint("Ping")
-            case .error(_):
-                debugPrint("Error")
+            case let .error(error):
+                debugPrint("Error: \(error.debugDescription)")
             case .viabilityChanged:
                 debugPrint("viabilityChanged")
             case .reconnectSuggested:
