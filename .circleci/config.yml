@@ -34,6 +34,11 @@ aliases:
   - &install_cocoapods
     name: Install CocoaPods
     command: bundle exec pod install
+  - &update_submodules
+    name: Update submodules
+    command: |
+      git submodule init && \
+      git submodule update
 version: 2
 jobs:
   build:
@@ -48,6 +53,7 @@ jobs:
       - restore_cache: *restore_cocoapods
       - run: *install_cocoapods
       - save_cache: *save_cocoapods
+      - run: *update_submodules
       - run:
           name: Build and run tests
           command: bundle exec fastlane scan
