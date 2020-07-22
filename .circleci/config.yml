@@ -39,7 +39,7 @@ aliases:
     command: |
       git submodule init && \
       git submodule update
-version: 2
+version: 2.1
 jobs:
   build:
     macos:
