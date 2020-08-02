@@ -33,7 +33,7 @@ aliases:
     key: cocoapods-{{ arch }}-{{ .Branch }}-{{ checksum "Podfile.lock" }}
   - &install_cocoapods
     name: Install CocoaPods
-    command: bundle exec pod install
+    command: bundle exec pod install --clean-install
   - &update_submodules
     name: Update submodules
     command: |
