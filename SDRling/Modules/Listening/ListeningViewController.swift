@@ -9,7 +9,7 @@ public final class ListeningViewController: UIViewController {
 
     let customView = ListeningView()
 
-    public override func loadView() {
+    override public func loadView() {
         view = customView
     }
 

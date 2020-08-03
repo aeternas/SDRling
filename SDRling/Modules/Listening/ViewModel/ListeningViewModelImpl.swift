@@ -19,6 +19,6 @@ public final class ListeningViewModelImpl: ListeningViewModel {
     }
 
     public func connect() {
-        receiverService.setupReceiverConnection()
+        receiverService.setupReceiverConnection { print($0) }
     }
 }
