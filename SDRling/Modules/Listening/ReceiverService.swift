@@ -9,7 +9,7 @@ final class ReceiverService: FetchesReceiver {
     let disposeBag = DisposeBag()
     var socket: WebSocket?
 
-    func setupReceiverConnection() {
+    func setupReceiverConnection(result: @escaping (Result<Data, Swift.Error>) -> Void) {
         guard
             let url = URL(string: "SOCKET_URL")
         else { return }
@@ -29,12 +29,14 @@ final class ReceiverService: FetchesReceiver {
                 debugPrint("Message : \(msg)")
             case let .binary(data):
                 debugPrint("Data is \(data)")
+                result(.success(data))
             case .pong:
                 debugPrint("Pong")
             case .ping:
                 debugPrint("Ping")
             case let .error(error):
                 debugPrint("Error: \(error.debugDescription)")
+                result(.failure(error ?? Error.generalError))
             case .viabilityChanged:
                 debugPrint("viabilityChanged")
             case .reconnectSuggested:
@@ -43,5 +45,9 @@ final class ReceiverService: FetchesReceiver {
                 debugPrint("cancelled")
             }
         }).disposed(by: disposeBag)
+    }
+
+    enum Error: Swift.Error {
+        case generalError
     }
 }
