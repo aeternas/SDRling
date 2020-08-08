@@ -3,5 +3,5 @@
 import Foundation
 
 protocol FetchesReceiver: AnyObject {
-    func setupReceiverConnection(result: @escaping (Result<Data, Error>) -> Void)
+    func setupReceiverConnection(frequency: String?, result: @escaping (Result<Data, Error>) -> Void)
 }

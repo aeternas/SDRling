@@ -21,7 +21,7 @@ public final class ListeningViewModelImpl: ListeningViewModel {
     }
 
     public func connect() {
-        receiverService.setupReceiverConnection { [weak self] result in
+        receiverService.setupReceiverConnection(frequency: nil) { [weak self] result in
             guard case let .success(buffer) = result else { return }
             self?.data.append(buffer)
             print(self?.data as Any)
