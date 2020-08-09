@@ -7,6 +7,8 @@ public final class ListeningViewModelImpl: ListeningViewModel {
 
     var frequencyValue: String?
 
+    private var data: Data = .init()
+
     init(
         receiverService: FetchesReceiver = ReceiverService()
     ) {
@@ -19,6 +21,10 @@ public final class ListeningViewModelImpl: ListeningViewModel {
     }
 
     public func connect() {
-        receiverService.setupReceiverConnection { print($0) }
+        receiverService.setupReceiverConnection(frequency: nil) { [weak self] result in
+            guard case let .success(buffer) = result else { return }
+            self?.data.append(buffer)
+            print(self?.data as Any)
+        }
     }
 }

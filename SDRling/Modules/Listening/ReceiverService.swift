@@ -9,10 +9,11 @@ final class ReceiverService: FetchesReceiver {
     let disposeBag = DisposeBag()
     var socket: WebSocket?
 
-    func setupReceiverConnection(result: @escaping (Result<Data, Swift.Error>) -> Void) {
+    func setupReceiverConnection(frequency: String?, result: @escaping (Result<Data, Swift.Error>) -> Void) {
         guard
             let url = URL(string: "SOCKET_URL")
         else { return }
+        frequency.map { print($0) }
         var request = URLRequest(url: url)
         request.setValue("ORIGIN_URL", forHTTPHeaderField: "Origin")
         request.setValue("WS_KEY", forHTTPHeaderField: "Sec-WebSocket-Key")
