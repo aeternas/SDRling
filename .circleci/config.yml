@@ -43,7 +43,7 @@ version: 2.1
 jobs:
   build:
     macos:
-      xcode: "11.4"
+      xcode: "11.5"
     steps:
       - *git_checkout
       - *replace_vars
