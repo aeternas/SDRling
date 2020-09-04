@@ -10,7 +10,7 @@ aliases:
         git reset --hard $CIRCLE_SHA1
   - &replace_vars
     run:
-      name: Replace vars
+      name: Replace vars with ENV
       command: bash pre_deployment.sh
   - &bundle_install
     name: Execute `bundle install`
