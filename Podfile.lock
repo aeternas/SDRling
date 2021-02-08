@@ -1,5 +1,5 @@
 PODS:
-  - RouteComposer (2.6.1)
+  - RouteComposer (2.6.6)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -23,7 +23,7 @@ SPEC REPOS:
     - Starscream
 
 SPEC CHECKSUMS:
-  RouteComposer: 4f1e50b0a2f72ec0f217c5bbfa6de227c56c1d15
+  RouteComposer: 3c3ae364e6f3f036179253ce9dee5eb1738ca377
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
@@ -31,4 +31,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 92375f443d3e047109699ce253934b86f3f8e8a0
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
