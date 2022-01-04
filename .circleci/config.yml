@@ -44,6 +44,7 @@ jobs:
   build:
     macos:
       xcode: "12.5.1"
+    resource_class: medium
     steps:
       - *git_checkout
       - *replace_vars
